@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Tokenizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Language Tokenizer</h1>
+        <label for="language">Select Language:</label>
+        <select id="language">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="german">German</option>
+            <option value="french">French</option>
+            <option value="italian">Italian</option>
+            <option value="portuguese">Portuguese</option>
+            <option value="russian">Russian</option>
+            <option value="chinese">Chinese</option>
+            <option value="japanese">Japanese</option>
+            <option value="korean">Korean</option>
+            <option value="hindi">Hindi</option>
+        </select>
+
+        <label for="text">Enter Text:</label>
+        <textarea id="text" rows="5" placeholder="Type your text here..."></textarea>
+
+        <button onclick="tokenizeText()">Tokenize</button>
+
+        <label for="output">Tokens:</label>
+        <div id="output" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
